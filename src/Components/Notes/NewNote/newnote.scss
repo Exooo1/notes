@@ -1,0 +1,26 @@
+@import '../../Common/mixin.scss';
+
+.newNote {
+	@include flexBlock(center, auto, auto, auto);
+	flex-direction: column;
+
+	button {
+		@include text(white, pointer, 800);
+		@include widHeiBack(120px, 40px, rebeccapurple);
+	}
+
+	input {
+		@include widHeiBack(200px, 30px, auto);
+		@include border(0 5px, 15px, solid 1px black, 20px);
+	}
+
+	textarea {
+		@include widHeiBack(200px, 30px, auto);
+		@include border(0 5px, 15px, solid 1px black, 5px);
+	}
+
+	div {
+		@include flexBlock(center, auto, auto, auto);
+		margin: 10px 0;
+	}
+}

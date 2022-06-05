@@ -1,0 +1,40 @@
+@import '../../Common/mixin.scss';
+
+.note {
+	@include flexBlock(center, auto, 100%, auto);
+
+	.note-description {
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		text-decoration: none;
+		padding-left: 10px;
+
+		h2 {
+			@include text(rebeccapurple, auto, 700);
+		}
+
+		p {
+			color: rebeccapurple;
+			opacity: 0.8;
+		}
+
+		margin-right: 10px;
+		width: 95%;
+	}
+
+	.note-action {
+		button {
+			@include widHeiBack(70px, 30px, cornflowerblue);
+			@include border(5px 0, auto, solid 1px black, 5px);
+			font-weight: 800;
+			color: white;
+			cursor: pointer;
+		}
+
+		button:disabled {
+			transition: 1s;
+			opacity: 0.1;
+			cursor: auto;
+		}
+	}
+}

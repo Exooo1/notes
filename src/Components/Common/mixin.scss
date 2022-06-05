@@ -1,0 +1,27 @@
+@mixin flexBlock($content, $back, $width, $height) {
+	display: flex;
+	justify-content: $content;
+	align-items: center;
+	width: $width;
+	height: $height;
+	background-color: $back;
+}
+
+@mixin widHeiBack($width, $height, $back) {
+	width: $width;
+	height: $height;
+	background-color: $back;
+}
+
+@mixin border($margin, $font, $border, $radius) {
+	margin: $margin;
+	font-size: $font;
+	border: $border;
+	border-radius: $radius;
+}
+
+@mixin text($color, $pointer, $weight) {
+	color: $color;
+	cursor: $pointer;
+	font-weight: $weight;
+}
